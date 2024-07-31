@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    background-image: url(images/head\ bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 220px;
+}
+.navigation {
+    display: flex;
+    /* width: 100vw; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    height: 70px;
+}
+.logo {
+    width: 62px;
+    height: 59px;
+}
+.search {
+    width: 20px;
+    height: 20px;
+}
+.navLeft{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 49px;
+}
+.navRight {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    height: 50px;
+    margin-right: 60px;
+}
+
+.menu {
+    display: flex;
+    gap: 39px;
+}
+.menu li {
+    list-style-type: none;
+}
+.signUp {
+    border: none;
+    border-radius: 10px ;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 10px;
+    background-color: #5920BC;
+}
+.main {
+    padding: 20px 72px;
+}
+.main h1 {
+    margin-bottom: 20px;
+}
+.services {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 60px 20px;
+
+}
+.serviceMain {
+    position: relative;
+}
+.serviceInfo {
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    left: 10px;
+    border-radius: 10px;
+    bottom: 16px;
+    left: 14px;
+}
+.serviceImg {
+    width: 340px;
+    height: 261px;
+}
+.subServices {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    width: 95%;
+    padding: 10px;
+}
+.subServices hr {
+    background-color: rgb(197, 196, 196);
+    color: rgb(197, 196, 196);
+    height: 1px;
+}
+.cost {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.download {
+    background-image: url(images/downloadBg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 207px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.downloadCont {
+    display: flex;
+    flex-direction: column;
+    width: 430px;
+    margin-right: 100px;
+    gap: 10px;
+
+}
+.downloadCont p {
+    font-size: 14px;
+}
+.app {
+    display: flex;
+    gap: 45px;
+}
+.app img {
+    width: 119px;
+}
+
+.footerNav {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px
+}
+.izziFoot {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 300px;
+    height: 154px;
+    background-color: #FCFBFE;
+
+}
+.izziFoot img {
+    width: 58px;
+}
+.izziFoot p {
+    width: 222px;
+    font-size: 14px;
+}
+.questions {
+    display: flex;
+    justify-content: space-between;
+    width: 615px;
+    font-size: 15px;
+}
+.questions div {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+.qBold {
+    font-weight: bold;
+}
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 10px 50px;
+}
+.icons {
+    display: flex;
+    gap: 25px;
+}
+.policy {
+    display: flex;
+    gap: 30px;
+}
