@@ -7,8 +7,7 @@ fetch('data.json')
         services.forEach(service => {
             let subServicesOutput = '';
             service.subServices.forEach(subService => {
-                subServicesOutput += `<p>${subService.title_en}</p>
-                <hr>`;
+                subServicesOutput += `<p>${subService.title_en}</p><hr>`;
             });
 
             output += `
@@ -20,14 +19,24 @@ fetch('data.json')
                             <p class="cost"><img src="images/money.png"> Starts from 20$/h</p>
                         </div>
                     </div>
-                    <div class="subServices">
+                    <div class="subServices" style="display: none;">
                         ${subServicesOutput}
-                        
                     </div>
                 </div>
             `;
         });
 
         document.querySelector('.services').innerHTML = output;
+
+        document.querySelectorAll('.service').forEach(serviceDiv => {
+            serviceDiv.addEventListener('click', function() {
+                const subServiceDiv = serviceDiv.querySelector('.subServices');
+                if (subServiceDiv.style.display === 'none' || subServiceDiv.style.display === '') {
+                    subServiceDiv.style.display = 'flex';
+                } else {
+                    subServiceDiv.style.display = 'none';
+                }
+            });
+        });
     })
-    
+    .catch(error => console.error('Error fetching data:', error));

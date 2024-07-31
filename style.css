@@ -178,3 +178,124 @@ gap: 60px 20px;
     display: flex;
     gap: 30px;
 }
+.mobileNav {
+    display: none;
+}
+.mobileStart {
+    display: none;
+}
+.description {
+    display: none;
+}
+
+@media screen and (max-width:500px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .subServices{
+        display: none
+    }
+    .services {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        padding: 0px 20px;
+        min-width: 300px;
+        text-align: center;
+    }
+    .serviceInfo {
+        font-size: 13px;
+        padding: 5px 10px;
+        left: 30px;
+    }
+    .navigation {
+        display: none;
+    }
+    .mobileNav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px 0px;
+        width: 100vw;
+    }
+    .header{
+        background-image: none;
+        height: fit-content;
+    }
+    .menuImg {
+        width: 32px;
+        height: 15px;
+    }
+    .profile {
+        height: 30px;
+    }
+    .logoImg {
+        height: 50px;
+    }
+    .downloadCont {
+        padding: 0px 20px;
+        width: 100vw;
+    }
+    .app {
+        gap: 30px;
+    }
+.mobileStart {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    padding: 0px 20px;
+}
+.description {
+    display: block;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+.main h1 {
+    margin: 0;
+    padding: 0px 20px;
+}
+.serviceImg {
+    width: 85%;
+    height: 128px;
+}
+.footerNav {
+    flex-direction: column;
+}
+.questions {
+    flex-direction: column;
+    width: fit-content;
+}
+.footer {
+    flex-direction: column;
+    gap: 20px;
+}
+.footer p {
+    font-size: 12px;
+}
+.main {
+    padding: 0;
+}
+.downloadCont {
+    margin: 0;
+
+}
+.download {
+    background-image: none;
+}
+.izziFoot {
+    /* padding: 10px; */
+    width: fit-content;
+    height: 140px;
+    margin-bottom: 20px;
+
+}
+.qLeft, .qMiddle {
+    margin-bottom: 20px;
+}
+.questions div {
+    gap: 0;
+}
+
+}
