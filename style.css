@@ -57,51 +57,6 @@
     gap: 10px;
     background-color: #5920BC;
 }
-.main {
-    padding: 20px 72px;
-}
-.main h1 {
-    margin-bottom: 20px;
-}
-.services {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 60px 20px;
-
-}
-.serviceMain {
-    position: relative;
-}
-.serviceInfo {
-    position: absolute;
-    background-color: white;
-    padding: 10px;
-    left: 10px;
-    border-radius: 10px;
-    bottom: 16px;
-    left: 14px;
-}
-.serviceImg {
-    width: 340px;
-    height: 261px;
-}
-.subServices {
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-    width: 95%;
-    padding: 10px;
-}
-.subServices hr {
-    background-color: rgb(197, 196, 196);
-    color: rgb(197, 196, 196);
-    height: 1px;
-}
-.cost {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
 .download {
     background-image: url(images/downloadBg.png);
     background-size: cover;
@@ -187,115 +142,134 @@ gap: 60px 20px;
 .description {
     display: none;
 }
-
-@media screen and (max-width:500px) {
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .subServices{
-        display: none
-    }
-    .services {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 10px;
-        padding: 0px 20px;
-        min-width: 300px;
-        text-align: center;
-    }
-    .serviceInfo {
-        font-size: 13px;
-        padding: 5px 10px;
-        left: 30px;
-    }
-    .navigation {
-        display: none;
-    }
-    .mobileNav{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 10px 0px;
-        width: 100vw;
-    }
-    .header{
-        background-image: none;
-        height: fit-content;
-    }
-    .menuImg {
-        width: 32px;
-        height: 15px;
-    }
-    .profile {
-        height: 30px;
-    }
-    .logoImg {
-        height: 50px;
-    }
-    .downloadCont {
-        padding: 0px 20px;
-        width: 100vw;
-    }
-    .app {
-        gap: 30px;
-    }
-.mobileStart {
+.employers {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+.employer {
+    border: 1px solid rgba(128, 128, 128, 0.551);
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
     display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
-    padding: 0px 20px;
-}
-.description {
-    display: block;
-    padding: 10px 20px;
-    font-size: 14px;
-}
-.main h1 {
-    margin: 0;
-    padding: 0px 20px;
-}
-.serviceImg {
-    width: 85%;
-    height: 128px;
-}
-.footerNav {
-    flex-direction: column;
-}
-.questions {
-    flex-direction: column;
-    width: fit-content;
-}
-.footer {
     flex-direction: column;
     gap: 20px;
+    height: fit-content;
 }
-.footer p {
-    font-size: 12px;
+.nameImg {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.personImg {
+    width: 50px;
+}
+.rating {
+    display: flex;
+    gap: 10px;
+}
+.ratingNum{
+    color:#FFC107
+}
+.sortingParameters {
+    display: flex;
+    justify-content: space-between;
+}
+.sortingParameters div {
+    display: flex;
+    gap: 5px;
+}
+.introduction {
+    color: #999999;
+    /* padding: 20px; */
+}
+.openingText {
+position: relative; 
+   top: 100px;
+   left: 40px;
+   width: fit-content;
+}
+.controls {
+    display: flex;
+    justify-content: space-between;
+}
+.controls div {
+    display: flex;
+    gap: 20px;
+}
+.view, .price, .booking {
+    color: #5920BC;
+}
+.price {
+ background-color: #5920bc10;
+ padding: 10px 15px;
+ border-radius: 10px;
+}
+.booking {
+    border: 1px solid #5920bc36;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.starImg {
+    width: 15px;
 }
 .main {
-    padding: 0;
+    display: flex;
+    padding-bottom: 100px;
 }
-.downloadCont {
-    margin: 0;
+.filters {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    width: 300px;
+    padding: 40px;
+}
+.levels form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 10px;
+}
+.sorting {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input[type="checkbox"] {
+    background-color: #f0f0f0;
+    border: 2px solid #5920BC;
+  }
 
+  input[type="checkbox"]:checked {
+    background-color: #5920bc9d;
+  }
+  select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    
+    background-color: #fff; 
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    padding: 8px 12px; 
+    width: 53%; 
+    font-size: 14px; 
+    color: #000; 
+    outline: none; 
+  
+    padding-right: 30px;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%23000' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
 }
-.download {
-    background-image: none;
-}
-.izziFoot {
-    /* padding: 10px; */
-    width: fit-content;
-    height: 140px;
-    margin-bottom: 20px;
 
-}
-.qLeft, .qMiddle {
-    margin-bottom: 20px;
-}
-.questions div {
-    gap: 0;
-}
+select:focus {
+    border-color: #999; 
 
+select::-ms-expand {
+    display: none; 
 }
